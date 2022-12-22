@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
+		<title>Rock Paper Scissors</title>
+	</head>
+	
+	<body>
+		<button id="popup-background" onclick="closePopup()"> </button>
+		<div id="popup"> 
+			<div id="popup-message"> </div>
+			<div> Play Again? </div>
+			<div> <button class="popup-button" id="popup-button-yes" onclick="newGame(); closePopup()"> Yes </button> <button class="popup-button" id="popup-button-no" onclick="closePopup()"> No </button> </div>
+		</div>
+		<div id="header"> 
+			<div id="title"> ROCK PAPER SCISSORS </div>
+		</div>
+	
+		<div class="flexbox-container" style="height:100px;">
+			
+			<div id="message-div"> Select your weapon! </div>
+				
+		</div>
+			
+			
+		<div class="flexbox-container">
+			
+			<button class="flexbox-player-button" id="player-rock-button" onclick="runRound('Rock');setPlayerButtonBackground('Rock')"> <img src="player_rock.png" class="button-img"> </button>
+			
+			<button class="flexbox-player-button" id="player-paper-button" onclick="runRound('Paper');setPlayerButtonBackground('Paper')"> <img src="player_paper.png" class="button-img"> </button>
+				
+			<button class="flexbox-player-button" id="player-scissors-button" onclick="runRound('Scissors');setPlayerButtonBackground('Scissors')"> <img src="player_scissors.png" class="button-img"> </button>
+			
+		</div>
+		
+		<div div class="flexbox-container">
+		
+			<button class="flexbox-computer-button" id="computer-rock-button" onclick="runRound('Rock')" disabled> <img src="computer_rock.png" class="button-img"> </button>
+			
+			<button class="flexbox-computer-button" id="computer-paper-button" onclick="runRound('Paper')" disabled> <img src="computer_paper.png" class="button-img"> </button>
+				
+			<button class="flexbox-computer-button" id="computer-scissors-button" onclick="runRound('Scissors')" disabled> <img src="computer_scissors.png" class="button-img"> </button>
+			
+		</div>
+			
+			
+		<div class="flexbox-container">
+			
+			<div id="score-div"> 0 - 0 </div>
+				
+		</div>
+		
+		<div id="footer"> Created by Michael Edgington (2022) <a href="https://github.com/medgington00" target="_blank" style="height:100%"> <img src="github.png" id="footer-image"> </a> </div>
+		
+		<script src="rockpaperscissors.js"></script>
+	</body>
+</html>
